@@ -7,6 +7,10 @@ const app = new Hono();
 
 app.use('*', poweredBy());
 
+app.onError((err, ctx) => {
+    return ctx.text(`Internal Server Error. ${err.message}`);
+});
+
 app.get('/plaintext/:login', async (ctx) => {
     const { login } = ctx.req.param();
     const broadcast = await getBroadcast(login);
