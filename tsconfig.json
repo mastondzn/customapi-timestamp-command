@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "lib": ["ES2020"],
-        "types": ["jest", "@cloudflare/workers-types"]
+        "types": ["jest", "@cloudflare/workers-types"],
+        "noUncheckedIndexedAccess": true
     }
 }

@@ -6,7 +6,7 @@
     "scripts": {
         "test": "jest --verbose",
         "dev": "wrangler dev src/index.ts",
-        "deploy": "wrangler publish src/index.ts",
+        "launch": "wrangler publish src/index.ts",
         "format": "prettier --write src/**/*.ts",
         "format:check": "prettier --check src/**/*.ts",
         "lint": "eslint ."
